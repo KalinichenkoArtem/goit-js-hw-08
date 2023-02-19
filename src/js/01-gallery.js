@@ -8,14 +8,8 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 console.log(galleryItems);
 console.log(SimpleLightbox);
 
-// Const
-
 const gallery = document.querySelector(".gallery");
 const cardsMarkup = createGalleryItemsMarkup(galleryItems);
-
-// Const
-
-// Render
 
 gallery.insertAdjacentHTML('beforeend', cardsMarkup);
 
@@ -35,5 +29,3 @@ function createGalleryItemsMarkup(galleryItems) {
 };
 
 const newGallery = new SimpleLightbox('.gallery a', { captionsData: "alt", captionDelay: 250, });
- 
-// Render
