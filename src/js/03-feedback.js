@@ -23,12 +23,3 @@ const onFormSubmit = (e) => {
 
 form.addEventListener('submit', onFormSubmit);
 form.addEventListener('input', throttle(onFormInput, 500));
-
-// const populateFormData = (e) => {
-//     if (parseData) {
-//         const formKeys = Object.keys(parseData);
-//         formKeys.map(element => {
-//             document.querySelector(`[name='${element}']`).value = parseData[element];
-//         });
-//     };
-// };
