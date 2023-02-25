@@ -18,13 +18,13 @@ let timeMove = timeOn;
 
 console.log(timeMove.seconds);
 
-player.setCurrentTime(timeMove.seconds)
-    .then(function (seconds) {})
-    .catch(function (error) {
-    switch (error.name) {
-        case 'RangeError':
-            break;
-        default:
-            break;
-    }
-    });
+// player.setCurrentTime(timeMove)
+//     .then(function (seconds) {})
+//     .catch(function (error) {
+//     switch (error.name) {
+//         case 'RangeError':
+//             break;
+//         default:
+//             break;
+//     }
+//     });
