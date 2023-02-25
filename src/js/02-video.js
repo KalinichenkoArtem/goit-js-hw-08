@@ -16,9 +16,8 @@ player.on('timeupdate', function (data) {
 const timeOn = JSON.parse(localStorage.getItem(KEY_LOCAL));
 let timeMove = timeOn;
 
-console.log(timeMove);
-
-player.setCurrentTime(timeMove)
+player
+    .setCurrentTime(timeMove)
     .then(function (seconds) {})
     .catch(function (error) {
     switch (error.name) {
