@@ -15,4 +15,15 @@ player.on('timeupdate', throttle(function (data) {
 
 const timeOn = JSON.parse(localStorage.getItem(KEY_LOCAL));
 console.log(timeOn);
-player.setCurrentTime(timeOn);
+player.setCurrentTime(timeOn)
+    .then(function (seconds) {
+    
+    })
+    .catch(function (error) {
+        switch (error.name) {
+            case 'RangeError':
+                break;
+            default:
+                break;
+        }
+    });
